@@ -1,0 +1,5 @@
+function Enemy(point){
+    
+}
+
+

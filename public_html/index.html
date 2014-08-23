@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Game</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="js/paper.js"></script>
+        
+        
+    </head>
+    <body>
+        
+        <canvas  id="myCanvas" width="1000" height="600" style="border:1px solid #000000;"></canvas>
+       
+
+        <script src="js/test.js"></script>
+        <script src="js/Game.js"></script>
+        <script src="js/input/Keys.js"></script>
+        <script src="js/entities/Player.js"></script>
+        <script src="js/entities/EdgeObject.js"></script>
+        <script >
+            
+            paper.install(window);
+            window.onload = function() {
+                // Setup directly from canvas id:
+                paper.setup('myCanvas');
+                
+                var game=new Game();
+                game.initListeners();
+                game.start();
+            }
+
+            
+            
+        </script>
+        
+        <script type="text/javascript">
+            
+            
+            
+            
+            
+            
+        </script>
+    </body>
+</html>
